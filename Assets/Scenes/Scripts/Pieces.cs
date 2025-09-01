@@ -10,9 +10,9 @@ public class Pieces : MonoBehaviour
     [SerializeField]
     ChessPieces chessPieces = new ChessPieces();
 
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
-    private int pieceNumber;
+    [SerializeField] private int pieceNumber;
 
     public enum ChessPieces
     { 
@@ -24,7 +24,7 @@ public class Pieces : MonoBehaviour
         Pawn
     }
 
-    [ColorUsage(false, true)]
+    [ColorUsage(true, true)]
     public Color colorUsage;
 
     void Start() 
